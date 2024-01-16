@@ -141,7 +141,7 @@ html{
 }
 .sobremi h2{
     font-size: 48;
-    font-family:'Righeous';
+    font-family:'Righteous';
     text-align: center;
     padding: 20px 0px;
 }
@@ -162,7 +162,7 @@ html{
 }
 .sobremi .fila .col h3{
     font-size: 28px;
-    font-family: 'Righeous';
+    font-family: 'Righteous';
     margin-bottom: 25px;
 }
 .sobremi .fila .col ul{
@@ -197,4 +197,38 @@ html{
     align-items: center;
     justify-content: center;
     transition: .3s;
+}
+.sobremi .fila .col .contenedor-tecnologias .tecnologias:hover{
+    background-color: #1cb698;
+}
+.sobremi .fila .col .contenedor-tecnologias .tecnologias .i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #1cb698;
+    z-index: -1;
+    transition: 1s;
+
+}
+.sobremi button:hover .overlay{
+    width: 100%;
 }
