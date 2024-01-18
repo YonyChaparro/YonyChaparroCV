@@ -294,4 +294,49 @@ html{
     right: -15px;
     font-size: 14px;
 }
-/*min 51:00*/
+
+/*Estas clases se agrgarán dinámicamente mediante javascript*/
+
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript{
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .HTMLCSS{
+    width: 0%;
+    animation: 2s HTMLCSS forwards;
+}
+@keyframes HTMLCSS{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.skills .skill .Boostrap{
+    width: 0%;
+    animation: 2s Boostrap forwards;
+}
+@keyframes Boostrap{
+    0%{width: 0%;}
+    100%{width: 45%;}
+}
+.skills .skill .Python{
+    width: 0%;
+    animation: 2s Python forwards;
+}
+@keyframes Python{
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+.skills .skill .Java-SE{
+    width: 0%;
+    animation: 2s Java-SE forwards;
+}
+@keyframes Java-SE{
+    0%{width: 0%;}
+    100%{width: 72%;}
+}
+
