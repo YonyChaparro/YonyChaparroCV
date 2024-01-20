@@ -401,7 +401,7 @@ html{
     color: #1cb698;
     margin-bottom: 10px;
 }
-.curriculum .fila .item .p{
+.curriculum .fila .item p{
     line-height: 24px;    
 }
 .curriculum .fila .izq{
@@ -413,5 +413,45 @@ html{
     margin-left: 20px;
 }
 .curriculum .fila .item .conectori{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+    color: #1cb698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
 
+.curriculum .fila .item .fecha{
+    display: block;
+    color: #1cb698;
+    margin-bottom: 10px;
+
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    border-right: 2px solid #1cb698;
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    border-left: 2px solid #1cb698;
+    margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: #1cb698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
 }
