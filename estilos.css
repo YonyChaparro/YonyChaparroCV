@@ -388,7 +388,12 @@ html{
     padding: 25px;
     margin-bottom: 30px;
     background-color: #252A2E;
+    
     position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 .curriculum .fila .item .casa{
     color: #1cb698;
@@ -412,12 +417,7 @@ html{
     border-left: 2px solid #1cb698;
     margin-left: 20px;
 }
-.curriculum .fila .item .conectori{
-    padding: 25px;
-    margin-bottom: 30px;
-    background-color: #252A2E;
-    position: relative;
-}
+
 .curriculum .fila .item h4{
     font-size: 20px;
     margin-bottom: 10px;
@@ -454,4 +454,14 @@ html{
     top: 50%;
     right: -47px;
     z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1cb698;
+    float: right;
+    position: relative;
+    bottom: 4px;
 }
