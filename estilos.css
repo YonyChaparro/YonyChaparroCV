@@ -368,6 +368,7 @@ html{
 }
 .curriculum .fila{
     display: flex;
+    justify-content: space-between;
 }
 .curriculum .fila .col{
     width: 49%;
@@ -462,6 +463,25 @@ html{
     border-radius: 50%;
     background-color: #1cb698;
     float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: #1cb698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1cb698;
+    float: left;
     position: relative;
     bottom: 4px;
 }
