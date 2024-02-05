@@ -10,7 +10,7 @@
 html{
     /*Nos permote deslizar cuando hagamos click en los links del menú */
     scroll-behavior: smooth;
-    scrollbar-color: #1cb698 #252A2E ;
+    /*scrollbar-color: #1cb698 #252A2E ; */
 }
 
 
