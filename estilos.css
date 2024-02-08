@@ -250,7 +250,7 @@ html{
     font-size: 48px;
     font-family:'Righteous';
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 .skills .fila{
     display: flex;
@@ -268,7 +268,7 @@ html{
 .skills .skill > span{
     font-weight: bold;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 .skills .skill .barra-skill{
     height: 8px;
