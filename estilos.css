@@ -142,7 +142,7 @@ html{
     margin: auto;
 }
 .sobremi h2{
-    font-size: 48;
+    font-size: 48px;
     font-family:'Righteous';
     text-align: center;
     padding: 20px 0px;
@@ -171,7 +171,7 @@ html{
     list-style: none;
 }
 .sobremi .fila .col ul li {
-    margin: 12px 0px;
+    margin: 12px 0;
 }
 .sobremi .fila .col ul li strong{
     display: inline-block;
