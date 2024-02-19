@@ -411,6 +411,7 @@ html{
     margin-bottom: 10px;
 }
 .curriculum .fila .item p{
+    text-align: justify;
     line-height: 24px;    
 }
 .curriculum .fila .izq{
@@ -421,6 +422,16 @@ html{
     border-left: 2px solid #1cb698;
     margin-left: 20px;
 }
+.curriculum .fila .der span{
+    display: block;
+    color: #1cb698;
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .der .listaHabilidades{
+    margin-bottom: 10px;
+}
+
 
 .curriculum .fila .item h4{
     font-size: 20px;
