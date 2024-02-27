@@ -343,6 +343,15 @@ html{
     100%{width: 72%;}
 }
 
+.skills .skill .Comunicacion{
+    width: 0%;
+    animation: 2s Comunicacion forwards;
+}
+@keyframes Comunicacion{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
 .skills .skill .trabajo{
     width: 0%;
     animation: 2s trabajo forwards;
@@ -350,6 +359,50 @@ html{
 @keyframes trabajo{
     0%{width: 0%;}
     100%{width: 75%;}
+}
+
+.skills .skill .Creatividad{
+    width: 0%;
+    animation: 2s Creatividad forwards;
+}
+@keyframes Creatividad{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .Dedicacion{
+    width: 0%;
+    animation: 2s Dedicacion forwards;
+}
+@keyframes Dedicacion{
+    0%{width: 0%;}
+    100%{width: 88%;}
+}
+
+.skills .skill .Responsabilidad{
+    width: 0%;
+    animation: 2s Responsabilidad forwards;
+}
+@keyframes Responsabilidad{
+    0%{width: 0%;}
+    100%{width: 88%;}
+}
+.skills .skill .Liderazgo{
+    width: 0%;
+    animation: 2s Liderazgo forwards;
+}
+@keyframes Liderazgo{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .Resolucion{
+    width: 0%;
+    animation: 2s Resolucion forwards;
+}
+@keyframes Resolucion{
+    0%{width: 0%;}
+    100%{width: 80%;}
 }
 
 /*Seccion Curriculum*/
