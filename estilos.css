@@ -76,7 +76,7 @@ html{
 
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(img/pexels-christina-morillo-1181271.jpg);
+    url(https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
     height: 100vh;
     color: #fff;
