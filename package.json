@@ -1,0 +1,21 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Curriculum de Yony Chaparro",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YonyChaparro/YonyChaparroCV.git"
+  },
+  "author": "Yony Chaparro",
+  "bugs": {
+    "url": "https://github.com/YonyChaparro/YonyChaparroCV/issues"
+  },
+  "homepage": "https://github.com/YonyChaparro/YonyChaparroCV#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
