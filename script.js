@@ -1,5 +1,5 @@
 let menuVisible = false;
-//Función que oculta o muestra el menu
+
 function mostrarOcultarMenu(){
     if(menuVisible){
         document.getElementById("nav").classList ="";
@@ -11,27 +11,32 @@ function mostrarOcultarMenu(){
 }
 
 function seleccionar(){
-    //oculto el menu una vez que selecciono una opcion
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
-//Funcion que aplica las animaciones de las habilidades
-function efectoHabilidades(){
-    var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distancia_skills >= 300){
-        let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("javascript");
-        habilidades[1].classList.add("HTMLCSS");
-        habilidades[2].classList.add("Boostrap");
-        habilidades[3].classList.add("Python");
-        habilidades[4].classList.add("Java-SE");
 
+function efectoHabilidades(){
+    var skillsSection = document.getElementById("skills"); // Cambié el nombre de la variable para evitar confusión
+    var distancia_skills = window.innerHeight - skillsSection.getBoundingClientRect().top;
+    if(distancia_skills >= 300){
+        let barrasProgreso = skillsSection.querySelectorAll(".progreso");
+
+
+        barrasProgreso[0].classList.add("HTMLCSS");
+        barrasProgreso[1].classList.add("javascript");
+        barrasProgreso[2].classList.add("Boostrap");
+        barrasProgreso[3].classList.add("Java-SE");
+        barrasProgreso[4].classList.add("Python");
+        barrasProgreso[5].classList.add("Comunicacion");
+        barrasProgreso[6].classList.add("trabajo");
+        barrasProgreso[7].classList.add("Resolucion");
+        barrasProgreso[8].classList.add("Creatividad");
+        barrasProgreso[9].classList.add("Dedicacion");
+        barrasProgreso[10].classList.add("Responsabilidad");
+        barrasProgreso[11].classList.add("Liderazgo");
     }
 }
 
-
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
     efectoHabilidades();
-} 
+}
