@@ -276,6 +276,77 @@ body {
     width: 100%;
 }
 
+/* SECCIÓN CARRUSEL */
+.carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 50px auto;
+    overflow: hidden; /* Muy importante para ocultar lo que está fuera de vista */
+    text-align: center;
+    height: 300px; /* Altura fija para el carrusel */
+    background-color: var(--color-fondo); /* Asegura el fondo oscuro */
+}
+
+.carrusel-contenedor {
+    width: 100%;
+    overflow: hidden; /* Asegura que solo se vea lo que está dentro de este contenedor */
+    position: relative;
+    height: 100%;
+}
+
+.carrusel-track {
+    display: flex;
+    /* Eliminar la transición CSS, ya que el movimiento será por JavaScript (requestAnimationFrame) */
+    /* transition: transform 0.5s ease-in-out; */
+    height: 100%;
+    align-items: center;
+    width: max-content; /* Permite que el track se estire para contener todo el contenido */
+}
+
+.carrusel-slide {
+    flex-shrink: 0; /* Evita que los slides se encojan */
+    /* Define un ancho y altura fijos para cada slide/certificado */
+    width: 400px; /* Ancho fijo para el contenedor del certificado */
+    height: 100%; /* El slide ocupa toda la altura del carrusel */
+    box-sizing: border-box;
+    padding: 15px; /* Espacio alrededor de cada certificado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Añadir un fondo para visualizar mejor los límites del slide */
+    background-color: var(--color-secundario);
+    border-radius: 10px; /* Borde redondeado para el contenedor del slide */
+    margin: 0 10px; /* Margen entre los slides para separarlos visualmente */
+}
+
+.carrusel-slide img {
+    /* La imagen ocupa el 100% del ancho disponible en el slide, */
+    /* y su altura se ajusta manteniendo la proporción. */
+    width: 100%;
+    height: 100%; /* La imagen ocupará toda la altura del slide */
+    object-fit: contain; /* CRUCIAL: Escala la imagen para que quepa dentro del contenedor */
+                        /* manteniendo su relación de aspecto, sin recortarla. */
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 700px) {
+    .carrusel {
+        height: 250px; /* Ajusta la altura del carrusel para móviles */
+        margin: 30px auto;
+    }
+
+    .carrusel-slide {
+        width: 300px; /* Ajusta el ancho del slide para móviles */
+        padding: 10px;
+        margin: 0 5px;
+    }
+
+    .carrusel-slide img {
+        border-radius: 10px;
+    }
+}
+
 .skills {
     background-color: var(--color-secundario);
     color: var(--color-texto);
