@@ -289,6 +289,7 @@ body {
     font-weight: bold;
     transition: transform 0.3s ease;
     border: 1px solid var(--color-primario);
+    max-width: 100%; /* Asegura que el botón no exceda el ancho del contenedor */
 }
 
 .boton-uifce:hover {
@@ -298,6 +299,8 @@ body {
 .boton-uifce img {
     height: 30px;
     width: auto;
+    max-width: 100px; /* Límite de seguridad adicional */
+    object-fit: contain;
 }
 
 /* SECCIÓN CARRUSEL */
