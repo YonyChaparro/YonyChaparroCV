@@ -80,3 +80,37 @@ document.addEventListener('DOMContentLoaded', () => {
     // Iniciar el desplazamiento automático al cargar la página
     startScrolling();
 });
+
+function calcularTiempoUIFCE() {
+    const fechaInicio = new Date(2025, 7, 1); // 1 de Agosto de 2025
+    const fechaActual = new Date();
+    
+    let meses = (fechaActual.getFullYear() - fechaInicio.getFullYear()) * 12;
+    meses -= fechaInicio.getMonth();
+    meses += fechaActual.getMonth();
+    
+    if (fechaActual.getDate() < fechaInicio.getDate()) {
+        meses--;
+    }
+
+    const elementoTiempo = document.getElementById('tiempo-uifce');
+    if (elementoTiempo) {
+        let texto = "";
+        if (meses < 1) {
+            texto = "(Recién ingresado)";
+        } else if (meses < 12) {
+            texto = `(${meses} mes${meses > 1 ? 'es' : ''})`;
+        } else {
+            const anios = Math.floor(meses / 12);
+            const mesesRestantes = meses % 12;
+            if (mesesRestantes === 0) {
+                texto = `(${anios} año${anios > 1 ? 's' : ''})`;
+            } else {
+                texto = `(${anios} año${anios > 1 ? 's' : ''} y ${mesesRestantes} mes${mesesRestantes > 1 ? 'es' : ''})`;
+            }
+        }
+        elementoTiempo.textContent = texto;
+    }
+}
+
+document.addEventListener('DOMContentLoaded', calcularTiempoUIFCE);
