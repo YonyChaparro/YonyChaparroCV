@@ -10,6 +10,32 @@
     --color-borde-oscuro: #2E3B4E;
 }
 
+.light-mode {
+    --color-fondo: #f0f2f5;
+    --color-secundario: #ffffff;
+    --color-texto: #333333;
+    --color-barras: #d1d5db;
+    --color-borde-oscuro: #e5e7eb;
+}
+
+.theme-toggle {
+    cursor: pointer;
+    font-size: 22px;
+    color: var(--color-texto);
+    margin-left: 20px;
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    color: var(--color-primario);
+    background-color: var(--color-secundario);
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Work Sans';
@@ -87,6 +113,21 @@ body {
     color: var(--color-texto);
     display: flex;
     align-items: center;
+}
+
+.light-mode .inicio {
+    background: linear-gradient(
+    to top, 
+    rgba(255, 255, 255, 0.5), 
+    rgba(255, 255, 255, 0.8)
+  ),
+  url(https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+background-size: cover;
+background-position: center;
+height: 100vh;
+color: #333; /* Ajustado para que sea legible sobre blanco */
+display: flex;
+align-items: center;
 }
 
 .inicio .contenido-banner {

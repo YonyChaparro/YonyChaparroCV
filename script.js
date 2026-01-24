@@ -114,3 +114,31 @@ function calcularTiempoUIFCE() {
 }
 
 document.addEventListener('DOMContentLoaded', calcularTiempoUIFCE);
+
+/* Lógica Tema Claro/Oscuro */
+function cambiarTema(){
+    document.body.classList.toggle("light-mode");
+    var icon = document.querySelector("#theme-toggle i");
+    if(document.body.classList.contains("light-mode")){
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+        localStorage.setItem("theme", "light");
+    }else{
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+        localStorage.setItem("theme", "dark");
+    }
+}
+
+// Aplicar tema guardado al cargar o detectar preferencia del sistema
+const temaGuardado = localStorage.getItem("theme");
+const prefiereClaro = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+
+if(temaGuardado === "light" || (!temaGuardado && prefiereClaro)){
+    document.body.classList.add("light-mode");
+    var icon = document.querySelector("#theme-toggle i");
+    if(icon) {
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+    }
+}
