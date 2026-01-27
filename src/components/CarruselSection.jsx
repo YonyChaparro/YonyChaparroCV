@@ -6,15 +6,15 @@ const CarruselSection = ({ currentSec }) => {
     const [selectedImage, setSelectedImage] = useState(null);
 
     const images = [
-        "/img/Desarrollo-Back-End-Yony-Chaparro.webp",
-        "/img/Machine-Learning-y-Data-Science.webp",
-        "/img/Cybersecurity-Fundamentals.webp",
-        "/img/LATAM-GCCF2023-Yony-Sebastian-Chaparro-Mesa.webp",
-        "/img/Preparate Data fot ML APIs on Google Cloud.webp",
-        "/img/Implement Load Balancing on Compute Engine on Google Cloud.webp",
-        "/img/Build a Secure.webp",
-        "/img/Set Up al App Dev Enviroment on Google Cloud.webp",
-        "/img/certificado-backend-conceptual.webp"
+        "img/Desarrollo-Back-End-Yony-Chaparro.webp",
+        "img/Machine-Learning-y-Data-Science.webp",
+        "img/Cybersecurity-Fundamentals.webp",
+        "img/LATAM-GCCF2023-Yony-Sebastian-Chaparro-Mesa.webp",
+        "img/Preparate Data fot ML APIs on Google Cloud.webp",
+        "img/Implement Load Balancing on Compute Engine on Google Cloud.webp",
+        "img/Build a Secure.webp",
+        "img/Set Up al App Dev Enviroment on Google Cloud.webp",
+        "img/certificado-backend-conceptual.webp"
     ];
 
     return (

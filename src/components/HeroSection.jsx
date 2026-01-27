@@ -15,7 +15,7 @@ const HeroSection = ({ currentBg, darkMode }) => (
         <Lanyard position={[0, 0, 30]} gravity={[0, -40, 0]}>
             <div className="contenido-banner w-full h-full flex flex-col items-center justify-center text-center p-4 text-white bg-transparent">
                 <div className="contenedor-img w-96 h-96 mb-5 rounded-full overflow-hidden border-[5px] border-[#00BCD4] shadow-2xl mx-auto">
-                    <img src="/img/foto de perfil CV.webp" alt="Yony" className="w-full h-full object-cover" />
+                    <img src="img/foto de perfil CV.webp" alt="Yony" className="w-full h-full object-cover" />
                 </div>
                 <h1 className="text-5xl font-black mb-3 tracking-widest uppercase drop-shadow-lg font-['Righteous'] leading-none">
                     Yony<br className="block" />Chaparro

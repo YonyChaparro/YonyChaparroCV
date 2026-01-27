@@ -138,7 +138,7 @@ const CurriculumSection = ({ currentSec }) => {
                             </div>
 
                             <div className="rounded-lg overflow-hidden border border-white/10">
-                                <img src="/img/Fotos%20Hackaton%20AyC%20Ganadores.webp" alt="Hackaton EAAB" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500" />
+                                <img src="img/Fotos%20Hackaton%20AyC%20Ganadores.webp" alt="Hackaton EAAB" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500" />
                             </div>
                         </TimelineItem>
 
