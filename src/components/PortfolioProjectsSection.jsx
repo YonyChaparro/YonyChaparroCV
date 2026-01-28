@@ -1,9 +1,9 @@
 import React from 'react';
 import ChromaGrid from './ChromaGrid';
 
-const PortfolioProjectsSection = ({ currentSec }) => {
+const PortfolioProjectsSection = () => {
     const projects = [
-        { title: "El Espiral", img: "https://yonychaparro.github.io/Marketing-Digital/Gemini_Generated_Image_t8d6klt8d6klt8d6.png", link: "https://yonychaparro.github.io/Marketing-Digital/index.html", repo: "https://github.com/YonyChaparro/Marketing-Digital", tech: "HTML, CSS, JavaScript" },
+        { title: "El Espiral", img: "https://github.com/YonyChaparro/JavaLi/blob/main/Proyecto/PosYa-app/public/icons/logo.png?raw=true", link: "https://yonychaparro.github.io/Marketing-Digital/index.html", repo: "https://github.com/YonyChaparro/Marketing-Digital", tech: "HTML, CSS, JavaScript" },
         { title: "PosYa!", img: "https://github.com/YonyChaparro/JavaLi/blob/main/Proyecto/PosYa-app/public/icons/logo.png?raw=true", link: "https://posya.onrender.com/", repo: "https://github.com/YonyChaparro/JavaLi", tech: "TypeScript, React, Express, DIAN" },
         { title: "La casa de las semillas", img: "img/la casa de las semillas.png", link: "https://ecommerce-seed-house.vercel.app/", repo: "https://github.com/YonyChaparro/seed-house-components", tech: "React, Bootstrap, Sass" },
         { title: "Gestión Alquileres", img: "https://transportesyserviciosantioquia.com/wp-content/uploads/2020/04/Afiliaci%C3%B3n-de-vehiculos-de-servicio-p%C3%BAblico-04-Transportes-y-Servicios.jpg", link: "https://tpt-web.onrender.com", repo: "https://github.com/YonyChaparro/TPT---WEB", tech: "Node.js, Express, SQLite" },
@@ -14,7 +14,7 @@ const PortfolioProjectsSection = ({ currentSec }) => {
     ];
 
     return (
-        <section id="portfolio" className="py-20 px-5 transition-colors duration-500" style={{ backgroundColor: currentSec }}>
+        <section id="portfolio" className="py-20 px-5 transition-colors duration-500 bg-transparent">
             <div className="max-w-[1200px] mx-auto">
                 <h2 className="text-5xl font-['Righteous'] text-center mb-12 text-white/90 drop-shadow-md">MIS PROYECTOS</h2>
                 <ChromaGrid items={projects} />

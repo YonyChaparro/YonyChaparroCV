@@ -66,7 +66,7 @@ const PortfolioHeader = ({
 
     // Efecto Glassmorphism más sutil
     const glassEffect = scrolled
-        ? "bg-white/90 dark:bg-[#0f172a]/90 backdrop-blur-lg shadow-sm"
+        ? "bg-background/90 backdrop-blur-lg shadow-sm"
         : "bg-transparent py-2"; // Un poco de padding extra cuando no hay scroll
 
     return (
@@ -78,7 +78,7 @@ const PortfolioHeader = ({
 
                 {/* Logo Area */}
                 <div
-                    className="flex-shrink-0 cursor-pointer select-none"
+                    className="flex-shrink-0 cursor-pointer select-none lg:w-32"
                     onClick={() => scrollToSection('inicio')}
                     role="button"
                     tabIndex={0}
@@ -89,9 +89,8 @@ const PortfolioHeader = ({
                     </span>
                 </div>
 
-                {/* Desktop Nav - ESPACIADO MEJORADO */}
-                <nav className="hidden md:flex items-center">
-                    {/* gap-8 = 32px de separación, estándar para legibilidad */}
+                {/* Desktop Nav - CENTRADO PERFECTO */}
+                <nav className="hidden md:flex items-center absolute left-1/2 -translate-x-1/2">
                     <ul className="flex list-none gap-8 items-center">
                         {NAV_ITEMS.map((item) => {
                             const isActive = activeSection === item.id;
@@ -122,29 +121,10 @@ const PortfolioHeader = ({
                             );
                         })}
                     </ul>
-
-                    {/* Separador vertical */}
-                    <div className="h-8 w-px bg-gray-200 dark:bg-gray-700 mx-8"></div>
-
-                    {/* Dark Mode Toggle */}
-                    <button
-                        onClick={() => setDarkMode(!darkMode)}
-                        className="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-[#00BCD4] transition-all focus:outline-none"
-                        aria-label="Cambiar tema"
-                    >
-                        <i className={`fa-solid ${darkMode ? 'fa-moon' : 'fa-sun'} text-xl`}></i>
-                    </button>
                 </nav>
 
                 {/* Mobile Controls */}
                 <div className="md:hidden flex items-center gap-4">
-                    <button
-                        onClick={() => setDarkMode(!darkMode)}
-                        className="p-2 text-gray-600 dark:text-gray-300 hover:text-[#00BCD4] transition-colors"
-                    >
-                        <i className={`fa-solid ${darkMode ? 'fa-moon' : 'fa-sun'} text-xl`}></i>
-                    </button>
-
                     <button
                         className="relative z-50 p-2 -mr-2 focus:outline-none text-gray-800 dark:text-white"
                         onClick={() => setMenuOpen(!menuOpen)}

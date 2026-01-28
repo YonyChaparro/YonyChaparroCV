@@ -36,7 +36,7 @@ const SkillItem = ({ name, pct }) => {
     );
 };
 
-const SkillsSection = ({ currentSec }) => {
+const SkillsSection = () => {
     const technicalSkills = [
         { name: "HTML & CSS", pct: 90 },
         { name: "JavaScript", pct: 80 },
@@ -56,7 +56,7 @@ const SkillsSection = ({ currentSec }) => {
     ];
 
     return (
-        <section id="skills" className="py-20 px-5 relative transition-colors duration-500" style={{ backgroundColor: currentSec }}>
+        <section id="skills" className="py-20 px-5 relative transition-colors duration-500 bg-transparent">
             <div className="max-w-[1200px] mx-auto relative z-10">
                 <h2 className="text-5xl font-['Righteous'] text-center mb-12 text-white/90 drop-shadow-md">Skills</h2>
                 

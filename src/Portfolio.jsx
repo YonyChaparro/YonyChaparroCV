@@ -9,11 +9,21 @@ import CurriculumSection from './components/CurriculumSection.jsx';
 import PortfolioProjectsSection from './components/PortfolioProjectsSection.jsx';
 import ContactoSection from './components/ContactoSection.jsx';
 import PortfolioFooter from './components/PortfolioFooter.jsx';
+import DotGrid from './components/DotGrid.jsx';
 
 const Portfolio = () => {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(true);
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+
+    // Sync darkMode with Tailwind class
+    useEffect(() => {
+        if (darkMode) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    }, [darkMode]);
 
     // Manejo del scroll para la navbar
     useEffect(() => {
@@ -33,44 +43,29 @@ const Portfolio = () => {
         }
     };
 
-    // Configuración de colores (Mapeo de tus variables CSS a valores arbitrarios de Tailwind)
-    const colors = {
-        primary: '#00BCD4',
-        darkBg: '#212B36',
-        darkSec: '#2E3B4E',
-        lightBg: '#f0f2f5',
-        lightSec: '#ffffff',
-        textDark: '#E0E6ED',
-        textLight: '#333333',
-    };
-
-    const currentBg = darkMode ? colors.lightBg : colors.darkBg;
-    const currentSec = darkMode ? colors.lightSec : colors.darkSec;
-    const currentText = darkMode ? colors.textLight : colors.textDark;
-
     return (
         <div
-            className={`min-h-screen font-['Work_Sans'] transition-colors duration-300`}
-            style={{ backgroundColor: currentBg, color: currentText }}
+            className={`min-h-screen font-['Work_Sans'] transition-colors duration-300 bg-background text-foreground relative`}
         >
-            <PortfolioHeader
-                darkMode={darkMode}
-                setDarkMode={setDarkMode}
-                menuOpen={menuOpen}
-                setMenuOpen={setMenuOpen}
-                scrolled={scrolled}
-                scrollToSection={scrollToSection}
-                currentBg={currentBg}
-                currentSec={currentSec}
-            />
-            <HeroSection currentBg={currentBg} darkMode={darkMode} />
-            <SobreMiSection currentSec={currentSec} />
-            <CarruselSection currentSec={currentSec} />
-            <SkillsSection currentSec={currentSec} />
-            <CurriculumSection currentSec={currentSec} />
-            <PortfolioProjectsSection currentSec={currentSec} />
-            <ContactoSection currentSec={currentSec} scrollToSection={scrollToSection} />
-            <PortfolioFooter currentSec={currentSec} scrollToSection={scrollToSection} />
+            <DotGrid />
+            <div className="relative z-10">
+                <PortfolioHeader
+                    darkMode={darkMode}
+                    setDarkMode={setDarkMode}
+                    menuOpen={menuOpen}
+                    setMenuOpen={setMenuOpen}
+                    scrolled={scrolled}
+                    scrollToSection={scrollToSection}
+                />
+                <HeroSection darkMode={darkMode} />
+                <SobreMiSection />
+                <CarruselSection />
+                <SkillsSection />
+                <CurriculumSection />
+                <PortfolioProjectsSection />
+                <ContactoSection scrollToSection={scrollToSection} />
+                <PortfolioFooter scrollToSection={scrollToSection} />
+            </div>
         </div>
     );
 };

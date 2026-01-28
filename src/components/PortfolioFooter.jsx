@@ -1,7 +1,7 @@
 import React from 'react';
 
-const PortfolioFooter = ({ currentSec, scrollToSection }) => (
-    <footer className="py-12 relative text-center shadow-[0_-4px_8px_rgba(0,0,0,0.2)]" style={{ backgroundColor: currentSec }}>
+const PortfolioFooter = ({ scrollToSection }) => (
+    <footer className="py-12 relative text-center shadow-[0_-4px_8px_rgba(0,0,0,0.2)] bg-secondary">
         <button onClick={() => scrollToSection('inicio')} className="absolute left-1/2 -top-6 -translate-x-1/2 w-12 h-12 bg-[#00BCD4] text-[#212B36] rounded-full flex items-center justify-center text-lg shadow-md hover:bg-white hover:text-[#00BCD4] transition-colors">
             <i className="fa-solid fa-angles-up"></i>
         </button>

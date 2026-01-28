@@ -1,8 +1,8 @@
 import React from 'react';
 import SpotlightCard from './SpotlightCard';
 
-const SobreMiSection = ({ currentSec }) => (
-    <section id="sobremi" className="py-12 px-5">
+const SobreMiSection = () => (
+    <section id="sobremi" className="py-12 px-5 relative z-10">
         <div className="max-w-[1100px] mx-auto">
             <h2 className="text-5xl font-['Righteous'] text-center mb-8">Sobre Mí</h2>
             <p className="text-lg leading-relaxed text-justify mb-8">

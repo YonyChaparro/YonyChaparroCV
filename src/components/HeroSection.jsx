@@ -2,10 +2,10 @@ import React from 'react';
 import Lanyard from './Lanyard';
 import { Github, Linkedin, Mail } from 'lucide-react'; // Imports genéricos útiles para una tarjeta
 
-const HeroSection = ({ currentBg, darkMode }) => (
+const HeroSection = ({ darkMode }) => (
     <section id="inicio" className="relative h-screen overflow-hidden bg-cover bg-center"
         style={{
-            backgroundImage: `linear-gradient(to top, ${darkMode ? 'rgba(255,255,255,0.5), rgba(255,255,255,0.8)' : 'rgba(30,35,38,.8), rgba(30,35,38,1)'}), url('https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`
+            backgroundImage: `linear-gradient(to top, ${!darkMode ? 'rgba(255,255,255,0.5), rgba(255,255,255,0.8)' : 'rgba(30,35,38,.8), rgba(30,35,38,1)'}), url('https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`
         }}
     >
         <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">

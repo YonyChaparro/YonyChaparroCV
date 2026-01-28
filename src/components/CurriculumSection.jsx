@@ -35,9 +35,9 @@ const TimelineItem = ({ title, subtitle, date, children, side = "left" }) => {
     );
 };
 
-const CurriculumSection = ({ currentSec }) => {
+const CurriculumSection = () => {
     return (
-        <section id="curriculum" className="py-20 px-5 relative transition-colors duration-500" style={{ backgroundColor: currentSec }}>
+        <section id="curriculum" className="py-20 px-5 relative transition-colors duration-500 bg-transparent">
             <div className="max-w-[1200px] mx-auto relative z-10">
                 <h2 className="text-5xl font-['Righteous'] text-center mb-16 text-white/90 drop-shadow-md">Curriculum</h2>
                 

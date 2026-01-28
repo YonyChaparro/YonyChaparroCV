@@ -1,15 +1,9 @@
 import React from 'react';
 import SpotlightCard from './SpotlightCard';
 
-const ContactoSection = ({ currentSec, scrollToSection }) => (
-    <section id="contacto" className="py-20 px-5 relative transition-colors duration-500" style={{ backgroundColor: currentSec }}>
+const ContactoSection = ({ scrollToSection }) => (
+    <section id="contacto" className="py-20 px-5 relative transition-colors duration-500 bg-transparent">
         
-        {/* Decorative elements */}
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-            <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-[#00BCD4]/10 rounded-full blur-[100px]" />
-            <div className="absolute bottom-[-10%] left-[-5%] w-[400px] h-[400px] bg-purple-500/10 rounded-full blur-[100px]" />
-        </div>
-
         <div className="max-w-[1200px] mx-auto relative z-10">
             <h2 className="text-5xl font-['Righteous'] text-center mb-16 text-white/90 drop-shadow-md">CONTÁCTAME</h2>
             

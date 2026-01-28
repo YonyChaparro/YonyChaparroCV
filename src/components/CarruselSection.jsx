@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import RollingGallery from './RollingGallery';
 
-const CarruselSection = ({ currentSec }) => {
+const CarruselSection = () => {
     const [selectedImage, setSelectedImage] = useState(null);
 
     const images = [
@@ -52,11 +52,8 @@ const CarruselSection = ({ currentSec }) => {
                 )}
             </AnimatePresence>
 
-            {/* Fondo con el color de la sección */}
-            <div 
-                className="absolute inset-0 -z-10 opacity-20 transition-colors duration-500" 
-                style={{ backgroundColor: currentSec }} 
-            />
+            {/* Fondo transparente para dejar ver el grid */}
+            <div className="absolute inset-0 -z-10 bg-transparent" />
         </section>
     );
 };
