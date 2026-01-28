@@ -3,7 +3,7 @@ import ChromaGrid from './ChromaGrid';
 
 const PortfolioProjectsSection = () => {
     const projects = [
-        { title: "El Espiral", img: "https://github.com/YonyChaparro/JavaLi/blob/main/Proyecto/PosYa-app/public/icons/logo.png?raw=true", link: "https://yonychaparro.github.io/Marketing-Digital/index.html", repo: "https://github.com/YonyChaparro/Marketing-Digital", tech: "HTML, CSS, JavaScript" },
+        { title: "El Espiral", img: "https://raw.githubusercontent.com/YonyChaparro/Marketing-Digital/refs/heads/main/Gemini_Generated_Image_t8d6klt8d6klt8d6.png", link: "https://yonychaparro.github.io/Marketing-Digital/index.html", repo: "https://github.com/YonyChaparro/Marketing-Digital", tech: "HTML, CSS, JavaScript" },
         { title: "PosYa!", img: "https://github.com/YonyChaparro/JavaLi/blob/main/Proyecto/PosYa-app/public/icons/logo.png?raw=true", link: "https://posya.onrender.com/", repo: "https://github.com/YonyChaparro/JavaLi", tech: "TypeScript, React, Express, DIAN" },
         { title: "La casa de las semillas", img: "img/la casa de las semillas.png", link: "https://ecommerce-seed-house.vercel.app/", repo: "https://github.com/YonyChaparro/seed-house-components", tech: "React, Bootstrap, Sass" },
         { title: "Gestión Alquileres", img: "https://transportesyserviciosantioquia.com/wp-content/uploads/2020/04/Afiliaci%C3%B3n-de-vehiculos-de-servicio-p%C3%BAblico-04-Transportes-y-Servicios.jpg", link: "https://tpt-web.onrender.com", repo: "https://github.com/YonyChaparro/TPT---WEB", tech: "Node.js, Express, SQLite" },
