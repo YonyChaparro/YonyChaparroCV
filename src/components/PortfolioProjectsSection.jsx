@@ -3,6 +3,8 @@ import ChromaGrid from './ChromaGrid';
 
 const PortfolioProjectsSection = () => {
     const projects = [
+        { title: "CESGAR", img: "https://www.allprintheads.com/cdn/shop/articles/3D_PRINTING_f99f1122-8730-4f8f-b257-d804a9e270ad.jpg?v=1756124588", link: "https://cesgar.com.co/", tech: "WordPress, WooCommerce, PHP" },
+        { title: "Kinec Energy", img: "https://yonychaparro.github.io/PROPUESTA-KINEC-ENERGY/img/background.webp", link: "https://yonychaparro.github.io/PROPUESTA-KINEC-ENERGY/", repo: "https://github.com/YonyChaparro/PROPUESTA-KINEC-ENERGY", tech: "HTML, CSS, JavaScript" },
         { title: "El Espiral", img: "https://raw.githubusercontent.com/YonyChaparro/Marketing-Digital/refs/heads/main/Gemini_Generated_Image_t8d6klt8d6klt8d6.png", link: "https://yonychaparro.github.io/Marketing-Digital/index.html", repo: "https://github.com/YonyChaparro/Marketing-Digital", tech: "HTML, CSS, JavaScript" },
         { title: "PosYa!", img: "https://github.com/YonyChaparro/JavaLi/blob/main/Proyecto/PosYa-app/public/icons/logo.png?raw=true", link: "https://posya.onrender.com/", repo: "https://github.com/YonyChaparro/JavaLi", tech: "TypeScript, React, Express, DIAN" },
         { title: "La casa de las semillas", img: "img/la casa de las semillas.png", link: "https://ecommerce-seed-house.vercel.app/", repo: "https://github.com/YonyChaparro/seed-house-components", tech: "React, Bootstrap, Sass" },
